@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+ <style>
+    body{ 
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    .header{
+         background-image: url(https://www.canada.ca/content/dam/dnd-mdn/images/cadetsjcr/cadets/sea-cadets/air-cadets-video-still.png); 
+         color: #fff;  
+         text-align: center;
+         margin: auto;
+         padding: 5px;
+         font-family:Verdana, Geneva, Tahoma, sans-serif;
+         letter-spacing: 5px;
+         font-size: 30px;
+         background-size: contain;
+
+     }
+    .nav-bar{ 
+        background-color: #333; 
+        overflow: hidden; 
+        font-size: 20px;
+    }
+    .nav-bar a{ 
+        float: left; 
+        display: block; 
+        color: rgb(236, 69, 69); 
+        text-align: center; 
+        padding: 14px 20px; 
+        text-decoration:wavy;
+    }
+    .nav-bar a:hover{ 
+        color: black; 
+        transition: 0.7s;
+        background-image:url(https://www.canada.ca/content/dam/dnd-mdn/images/cadetsjcr/cadets/sea-cadets/air-cadets-video-still.png);
+        background-size: 150%;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        width:45px;
+        height:25px;
+        font-size:0;
+    }
+    .footer{
+      background-color: #222; 
+      color: white; text-align: center; 
+      padding: 10px; 
+       font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       font-size: 20px;
+       margin:20px;
+      }
+    .welcome{
+      text-align: center;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .album .responsive-container-block {
+      min-height: 75px;
+      height: fit-content;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 0px;
+      margin-right: auto;
+      margin-bottom: 0px;
+      margin-left: auto;
+      justify-content: flex-start;
+    }
+    
+    .album .responsive-container-block.bg {
+      max-width: 1700px;
+      margin: 0 0 0 0;
+      justify-content: space-between;
+    }
+    
+    .album .img {
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+    .album .responsive-container-block.img-cont {
+      flex-direction: column;
+      max-width: 33.3%;
+      min-height: auto;
+      margin: 0 0 0 0;
+      height: 100%;
+    }
+    .album .img.img-big {
+      height: 50%;
+      margin: 0 0 16px 0;
+    }
+    
+    @media (max-width: 1024px) {
+      .album .img {
+        margin: 0 0 18px 0;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .album .img {
+        max-width: 32.5%;
+        margin: 0 0 0 0;
+      }
+    
+      .album .responsive-container-block.bg {
+        flex-direction: column;
+      }
+    
+      .album .responsive-container-block.img-cont {
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    
+      .album .img.img-big {
+        max-width: 50%;
+        margin: 0 0 0 0;
+      }
+    }
+    
+    @media (max-width: 500px) {
+      .album .img {
+        max-width: 94%;
+        margin: 0 0 25px 0;
+      }
+    
+      .album .responsive-container-block.img-cont {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 10px 10px 10px;
+      }
+    
+      .album .img.img-big {
+        max-width: 94%;
+        margin: 0 0 25px 0;
+      }
+    
+      .album .img.img-last {
+        margin: 0 0 5px 0;
+      }
+    }
+    .current{
+        background-image:url(https://pbs.twimg.com/media/FSRQd6gXMAUrTi5.jpg);
+        background-size: 125%;
+        background-position-x: 35%;
+        background-position-y: 50%;
+        width:50px;
+        height:25px;
+    }
+  </style>
+
+
+<div class="header">
+    <h1>Royal Canadian Air Cadets</h1>
+</div>
+
+<div class="nav-bar">
+  <a href="Assignmentmain.html">Home</a>
+  <a href="Assignmentintro.html">Introduction</a>
+  <a href="Assignmentranks.html">Ranks and Levels</a>
+  <a href="Assignmentprogram.html">Activities</a>
+  <a href="Assignmentgallery.html">Gallery</a>
+</div>
+
+<div class="welcome">
+<h2>Gallery</h2>
+</div>
+
+<div class="album">
+  <div class="responsive-container-block bg">
+    <div class="responsive-container-block img-cont">
+      <img class="img" src="https://aircadetleague.com/wp-content/uploads/2020/04/CM07-20190805-2019-0051-123-1024x683.jpg">
+      <img class="img" src="https://www.bpmcdn.com/f/files/campbellriver/import/2017-06/web1_copy_170602-CRM-air-cadets-annual-review_2.jpg">
+      <img class="img img-last" src="https://www.vmcdn.ca/f/files/glaciermedia/import/lmp-all/1210956-cadets10.jpg">
+      <img class="img" src="https://shuswapfoundation.ca/wordpress/wp-content/uploads/2019/01/rcac-222-1.jpg">
+    </div>
+    <div class="responsive-container-block img-cont">
+      <img class="img img-big" src="https://ltgov.bc.ca/wp-content/uploads/2018/07/SLM_9378.jpg">
+      <img class="img img-big img-last" src="https://166bulldogsqn.files.wordpress.com/2022/12/75619068_1484428555062020_8045686700006965248_n.jpg">
+      <img class="img img-big" src="https://www.wingsmagazine.com/wp-content/uploads/2019/03/7a5015e44adc4c9c821254cfdc03d0c6.jpg">
+    </div>
+
+    <div class="responsive-container-block img-cont">
+      <img class="img" src="https://images.squarespace-cdn.com/content/v1/5c5f05197a1fbd399a3b8843/1549904165668-A562H1TR0EBNVVFM3YSL/Nomad-Flight-1-e1472089191276.jpg">
+      <img class="img" src="https://www.vmcdn.ca/f/files/glaciermedia/import/lmp-all/1292881-rem-day-service.jpg;w=567;h=379;mode=crop">
+      <img class="img img-big" src="https://aircadets.ca/735/pics/sqn2.jpg">
+      <img class="img" src="https://pbs.twimg.com/media/CkOg1LvXAAAP2pL?format=jpg&name=4096x4096">
+      <img class="img" src="https://www.vmcdn.ca/f/files/glaciermedia/import/lmp-all/398199-aircadetsnew16.jpg">
+    </div>
+  </div>
+</div>
+  <div class="footer">Royal Canadian Air Cadets<br> Created By Max Yang</div>
+  </body>
