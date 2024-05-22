@@ -1,19 +1,21 @@
 <!DOCTYPE html>
- <style>
-     body{ 
+<style>
+    body{ 
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
      }
     .header{
-         background-image: url(https://www.canada.ca/content/dam/dnd-mdn/images/cadetsjcr/cadets/sea-cadets/air-cadets-video-still.png); 
-         color: #fff;  
+         background-image: url(https://i.cbc.ca/1.4266914.1504027048!/fileImage/httpImage/forrest-goodluck-as-saul-indian-horse.jpg); 
+         color: #094faa;  
          text-align: center;
          margin: auto;
          padding: 5px;
          font-family:Verdana, Geneva, Tahoma, sans-serif;
          letter-spacing: 5px;
          font-size: 30px;
-         background-size: contain;
-
+         background-size:cover;
+         background-position-x: left;
+         background-position-y:90%;
+         
      }
     .nav-bar{ 
         background-color: #333; 
@@ -46,25 +48,60 @@
          font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
          font-size: 20px;
          margin:20px;
-        }
-    .gallery{ 
-        display: flex; 
-        flex-wrap: wrap; 
-        justify-content: space-around; 
     }
-    .gallery img{ 
-        margin: 10px; 
-        border-radius: 5px; 
-        width: 350px;
-        height:350px;
-        object-fit: cover;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-     }
-    .welcome{
-        text-align: center;
+    .ftx{
+        background-image: url(https://scontent.fyka1-1.fna.fbcdn.net/v/t39.30808-6/313426046_5822692817782701_8295970819488517106_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=xe6xNUt9PWUAX--vhDp&_nc_ht=scontent.fyka1-1.fna&oh=00_AfBn9r9XyI-SqSh3KImg6ZZNx9Qc5qh-nW-AxH4Yt1BNzQ&oe=65EA1131);
+        background-position-y:60%;
+        height:200px;
+        width:auto;
+    }
+    .marksmanship{
+        background-image: url(https://www.bpmcdn.com/f/files/cloverdale/import/2018-05/12014263_web1_TeresaLiao-Cadets.jpg);
+        background-position-y: center;
+        height:200px;
+        width:auto;
+        background-size: cover;
+    }
+    .drill{
+        background-image: url(https://i.ytimg.com/vi/or_hoFNTztA/maxresdefault.jpg);
+        background-position-y: 40%;
+        height:200px;
+        width:auto;
+        background-size: cover;
+    }
+    .Tours{
+        background-image: url(https://scontent.fyka1-1.fna.fbcdn.net/v/t39.30808-6/333986629_710583524101415_435458737126581268_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=3635dc&_nc_ohc=0SXILINhB0UAX-Cgqdy&_nc_ht=scontent.fyka1-1.fna&oh=00_AfDvaRucqo4PFtqwWf1u7tM4AfVdJElCy2Z9XcOsJnGv4g&oe=65EA6AB4);
+        background-position-y: 55%;
+        height:200px;
+        width:auto;
+        background-size: cover;
+    }
+    .Fitness{
+        background-image: url(https://scontent.fyka1-1.fna.fbcdn.net/v/t31.18172-8/17834413_1404192112966149_3149163296250384571_o.jpg?_nc_cat=104&ccb=1-7&_nc_sid=4dc865&_nc_ohc=PL0hZ-lHGcoAX__1Yqf&_nc_ht=scontent.fyka1-1.fna&oh=00_AfDotdnkvUS0Jf5Cr8ILws-o4wZVP42FMB0Kf5-wT8cETw&oe=660CDDCF);
+        background-position-y: 40%;
+        height:200px;
+        width:auto;
+        background-size: cover;
+    }
+    .Fam{
+        background-image: url(https://scontent.fyka1-1.fna.fbcdn.net/v/t39.30808-6/316418157_5877920662259916_7075061455270943079_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_ohc=P8MhOImEJXcAX9aLTrx&_nc_ht=scontent.fyka1-1.fna&oh=00_AfBegu_cG6lx57oViT6PSjpxYjx1285tQO7oUK3dApwq-Q&oe=65EA800B);
+        background-position-y: 40%;
+        height:200px;
+        width:auto;
+        background-size: cover;
+    }
+    p.texts{
+        background-color: rgb(255, 255, 255);
+        color:black;  
         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 25px;
-        font-weight: bold;
+        font-size: 20px;
+        width:900px
+    }
+    p.text{
+        background-color: rgb(255, 255, 255);
+        color:black;  
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20px; 
     }
     .button {
         background-color: #274ecf; 
@@ -72,9 +109,9 @@
         font-size: 20px;
         display:inline-block;
         color:aliceblue;
-        padding:15px;
+        padding:10px;
         margin-left: 695px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .button:hover { 
         background-color: #ddd; 
@@ -83,29 +120,47 @@
     a:link {
         text-decoration:none;
     }
-    .text {
+    .welcome{
         text-align: center;
-        letter-spacing: 1px;
-        width:600px;
-        margin: auto;
-        width: 50%;
-        border: 3px solid rgb(15, 86, 179);
-        padding: 10px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .welcomes{
+        text-align: Left;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    img{
+        height:75px;
+        width:auto;
+        float:left;
+        padding:10px;
+    }
+    img.level{
+        height:200px;
+        width:auto;
+    }
+    img.badge{
+        height: 550px;
+        width:auto;
     }
     </style>
 
 <body>
 
 <div class="header">
-    <h1>Royal Canadian Air Cadets</h1>
+    <h1>INDIAN HORSE</h1>
 </div>
 
 <div class="nav-bar">
-    <a href="Assignmentmain.html">Home</a>
-    <a href="Assignmentintro.html">Introduction</a>
-    <a href="Assignmentranks.html">Ranks and Levels</a>
-    <a href="Assignmentprogram.html">Activities</a>
-    <a href="Assignmentgallery.html">Gallery</a>
+    <a href="main.html">Home</a>
+    <a href="intro.html">Introduction</a>
+    <a href="summary.html">Summary</a>
+    <a href="author.html">Author</a>
+    <a href="gallery.html">Gallery</a>
+    
 </div>
 
 <h2 class="welcome";>About Cadets</h2>
